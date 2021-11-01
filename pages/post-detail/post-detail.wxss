@@ -1,0 +1,104 @@
+/* pages/post-detail/post-detail.wxss */
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.head-image{
+  width: 100%;
+  height: 460rpx;
+}
+
+.author-date{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+
+.avatar{
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 100%;
+  margin-right: 20rpx;
+}
+
+.author{
+  font-size: 30rpx;
+  font-weight: 300;
+  color: #666;
+}
+
+.const-text{
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 20rpx;
+}
+
+.date{
+  font-size: 24rpx;
+  margin-left: 30rpx;
+  color: #999;
+}
+
+.title{
+  margin-left: 40rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-top: 30rpx;
+  letter-spacing: 2px;
+  color: #4b556c;
+}
+
+.tool{
+  display: flex;
+  /* flex-direction 设置的方向就是主轴 */
+  flex-direction: column;
+  /* align-items 设置的是flex子元素在交叉轴上面的排布方式 */
+  align-items: center;
+  /* justify-content 设置的是flex子元素在主轴上面的排布方式 */
+  justify-content: center;
+  margin-top: 20rpx;
+}
+
+.circle{
+  display: flex;
+  width: 660rpx;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.horizon{
+  width: 660rpx;
+  height: 1px;
+  position: absolute;
+  background-color: #e5e5e5;
+  z-index: -99;
+}
+
+.circle-img{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 15rpx;
+}
+
+.detail{
+  color: #666;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+  line-height: 44rpx;
+  letter-spacing: 2px;
+}
+
+.audio{
+  width: 102rpx;
+  height: 102rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -50rpx;
+  top: 185rpx;
+  opacity: 0.4;
+}

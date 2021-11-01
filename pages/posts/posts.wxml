@@ -1,0 +1,24 @@
+<!--pages/posts/posts.wxml-->
+<view>
+  <swiper interval="2000" indicator-dots="{{true}}" autoplay="{{true}}">
+    <swiper-item>
+      <!-- 插槽 -->
+      <image data-id="0" capture-bind:tap="onGoToDetail" src="https://img0.baidu.com/it/u=2325097844,3689203542&fm=26&fmt=auto"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-id="1" capture-bind:tap="onGoToDetail" src="https://w.wallhaven.cc/full/y8/wallhaven-y8vlyk.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-id="2" capture-bind:tap="onGoToDetail" src="https://w.wallhaven.cc/full/l3/wallhaven-l3zmwy.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- <post text='777'></post> -->
+
+
+<!-- 自定义属性 -->
+<block wx:for="{{posts}}" wx:key="postId">
+  <!-- {{index}} -->
+  <post bind:posttap = "onGoToDetail" res="{{item}}"></post>
+</block>
+</view>

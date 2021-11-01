@@ -1,0 +1,12 @@
+<view class="container f-class">
+  <view class="title-container">
+    <text>{{title}}</text>
+    <text class="more-text" capture-bind:tap="onGotoMore">更多 > </text>
+  </view>
+  <view class="movie-container">
+  <block wx:for="{{movies}}" wx:key="index">
+  <!-- 这里传入了movies里的一个一个item，即movie -->
+    <movie movie="{{item}}"></movie>
+  </block>
+  </view>
+</view>

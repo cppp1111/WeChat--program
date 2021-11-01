@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/posts/posts",
+    "pages/post-detail/post-detail",
+    "pages/movies/movies",
+    "pages/more-movie/more-movie",
+    "pages/movie-detail/movie-detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#C22A1E"
+  },
+  "tabBar": {
+    "selectedColor": "#333333",
+    "color": "#999999",
+    "list": [
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "阅读",
+        "iconPath": "/images/icon/阅读 (1).png",
+        "selectedIconPath": "/images/icon/阅读.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "/images/icon/电影 (1).png",
+        "selectedIconPath": "/images/icon/电影.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "usingComponents":{
+    "movie":"/components/movie/index",
+    "l-search-bar":"/miniprogram_npm/lin-ui/search-bar",
+    "l-rate":"/miniprogram_npm/lin-ui/rate"
+  }
+}

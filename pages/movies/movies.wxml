@@ -1,0 +1,8 @@
+
+<view class="container">
+  <l-search-bar l-class="ex-search-bar" placeholder="盗梦空间" show-cancel="{{false}}"></l-search-bar>
+
+  <movie-list data-type="in_theaters" capture-bind:tap="onGotoMore" movies="{{inTheaters}}" title="正在热映" f-class="movie-list"></movie-list>
+  <movie-list data-type="coming_soon" capture-bind:tap="onGotoMore" movies="{{commingSoon}}" title="即将上映" f-class="movie-list"></movie-list>
+  <movie-list data-type="top250" capture-bind:tap="onGotoMore" movies="{{top250}}" title="豆瓣Top250" f-class="movie-list"></movie-list>
+</view>
