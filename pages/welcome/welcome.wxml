@@ -8,7 +8,7 @@
 
 <!-- catch能够阻止冒泡，bind能够冒泡到上一级 -->
   <view bind:tap="onTap" class="journey-container">
-    <text class="jounery">开启小程序之旅</text>
+    <text class="jounery">开启我的小程序之旅~</text>
   </view>
 </view>
 
